@@ -15,6 +15,11 @@ public class ArraysAreEqual {
      * @return true if the values of a are equal to the values of b.
      */
     public boolean equal(int[] a, int[] b){
-        return false;
+        int flag = 0;
+        for (int i=0;i<a.length;i++){
+            if(a[i]==b[i]){flag++;}
+        }
+        if(flag == a.length){return true;}
+        else return false;
     }
 }
